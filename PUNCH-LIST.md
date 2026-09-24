@@ -10,7 +10,7 @@ Prototype review URL: https://gibsonds.github.io/thegive-website/
 - [ ] Confirm every member’s public name and role.
 - [ ] Decide whether Donald Cohen should appear as a band member, songwriter/lyricist, or both.
 - [x] Feature Studio Recordings as the primary release.
-- [x] Add a Lyrics tab with Sarah’s seven archived lyric-sheet scans.
+- [x] Use Sarah’s seven archived lyric-sheet scans as song-link artwork and a subtle page texture.
 - [ ] Confirm whether all four album covers may be displayed on the public website.
 - [ ] Choose the public domain name.
 
@@ -20,7 +20,7 @@ Prototype review URL: https://gibsonds.github.io/thegive-website/
 - [ ] Later: source and approve a current, high-resolution horizontal band photograph for the About section; keep the placeholder until one is available.
 - [ ] Supply a second performance, rehearsal, or archival photograph for the hero or documentary section.
 - [x] Add the final YouTube documentary URL.
-- [ ] Provide the official Instagram profile URL.
+- [x] Link the band’s Instagram profile, @thegivebandct.
 - [x] Add the official YouTube channel URL.
 - [ ] Confirm the Spotify and Apple Music artist links currently used in the prototype.
 - [ ] Supply a favicon or approve creation of one from the band’s wordmark/artwork.
@@ -52,14 +52,13 @@ Prototype review URL: https://gibsonds.github.io/thegive-website/
 • Review the About copy and confirm member names/roles
 • Decide how Donald should be credited
 • Choose the primary featured album
-• Review the new Lyrics tab and archived lyric-sheet scans
+• Review how the lyric sheets appear with their recordings
 • Confirm web-display rights for all four album covers
 • Choose a domain name
 
 *Needed assets and links*
 • Later: current high-resolution band photo (placeholder remains until approved)
 • Second performance/rehearsal/archive photo
-• Official Instagram URL
 • Confirm Spotify and Apple Music links
 • Favicon and social-sharing image
 

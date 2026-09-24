@@ -80,9 +80,13 @@
     .record summary:after{content:"+";font-family:var(--serif);font-size:32px;font-weight:400;line-height:1}
     .record[open] summary:after{content:"−"}
     .track-list{list-style:none;margin:0;padding:0 0 28px;display:grid;grid-template-columns:repeat(2,1fr);column-gap:42px}
-    .track-list li{border-top:1px solid var(--line)}
-    .track-list a{display:grid;grid-template-columns:30px 1fr auto;gap:12px;align-items:center;padding:13px 2px;font-size:14px;transition:padding .2s,background .2s}
-    .track-list a:hover{padding-left:10px;background:rgba(23,19,15,.04)}
+    .track-list li{border-top:1px solid var(--line);display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:stretch;position:relative;isolation:isolate;overflow:hidden}
+    .track-list li.has-sheet:before{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(90deg,rgba(255,249,239,.87),rgba(255,249,239,.45)),var(--sheet-image);background-size:cover;background-position:center 30%;opacity:0;transition:opacity .25s}
+    .track-list li.has-sheet:hover:before,.track-list li.has-sheet:focus-within:before{opacity:1}
+    .track-list .play-link{display:grid;grid-template-columns:30px 1fr auto;gap:12px;align-items:center;padding:13px 2px;font-size:14px;transition:padding .2s,background .2s}
+    .track-list .play-link:hover{padding-left:10px;background:rgba(23,19,15,.04)}
+    .sheet-link{display:flex;align-items:center;padding:9px 4px 9px 12px;font-size:10px;text-transform:uppercase;letter-spacing:.1em;font-weight:600;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+    .sheet-link:hover{color:var(--red)}
     .track-no{font-size:10px;color:#817568;font-variant-numeric:tabular-nums}
     .track-go{font-size:10px;text-transform:uppercase;letter-spacing:.1em}
     .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
@@ -104,13 +108,6 @@
     .members{margin-top:45px;padding-top:24px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:10px 28px;font-size:13px}
     .members span{display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid var(--line);padding:9px 0}
     .members i{font-style:normal;color:#6e6256}
-    .lyrics{background:var(--paper-2)}
-    .lyric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .lyric-sheet{margin:0;background:var(--cream);padding:10px}
-    .lyric-sheet a{display:block;overflow:hidden;background:#ddd}
-    .lyric-sheet img{display:block;width:100%;height:390px;object-fit:cover;object-position:top;transition:transform .35s}
-    .lyric-sheet a:hover img{transform:scale(1.025)}
-    .lyric-sheet figcaption{padding:12px 5px 4px;font-family:var(--serif);font-size:25px}
     .film{background:var(--ink);color:var(--cream);overflow:hidden}
     .film-grid{display:grid;grid-template-columns:.72fr 1.28fr;gap:70px;align-items:center}
     .film-card{aspect-ratio:16/10;position:relative;display:grid;place-items:center;background:
@@ -126,7 +123,9 @@
     .show-date{font-family:var(--serif);font-size:36px}
     .show-place strong{font-size:19px;display:block}
     .show-place span{font-size:13px;text-transform:uppercase;letter-spacing:.1em}
-    .mail{background:var(--acid);text-align:center}
+    .mail{background:var(--acid);text-align:center;position:relative;overflow:hidden}
+    .mail:before{content:"";position:absolute;right:-5%;top:-25%;width:42%;height:150%;background:url("assets/lyric-sheets/not-just-yet.jpg") center/cover no-repeat;opacity:.12;transform:rotate(-11deg);pointer-events:none}
+    .mail .shell{position:relative}
     .mail h2{max-width:10ch;margin:0 auto 28px}
     .mail p{max-width:560px;margin:0 auto 35px;font-size:18px}
     .form{display:flex;max-width:700px;margin:auto;border-bottom:2px solid var(--ink)}
@@ -149,7 +148,7 @@
       .section{padding:80px 0}.section-head,.release-grid,.story-grid,.film-grid,.footer-top{grid-template-columns:1fr;gap:42px}
       .section-head{margin-bottom:45px}.story-copy{padding-top:10px}.photo{min-height:460px}
       .songs-intro{grid-template-columns:1fr;gap:12px}.track-list{grid-template-columns:1fr}
-      .lyric-grid{grid-template-columns:repeat(2,1fr)}.lyric-sheet img{height:300px}
+      .mail:before{width:80%;opacity:.07}
       .show-row{grid-template-columns:1fr auto;gap:5px}.show-date{grid-column:1/-1}.show-row .btn{grid-column:2;grid-row:2}.members{grid-template-columns:1fr}
       .form{display:block}.form button{width:100%;border-top:1px solid var(--ink)}
       .footer-top{padding-bottom:50px}.fine{gap:20px;flex-direction:column}
@@ -162,7 +161,7 @@
     <div class="nav-inner shell">
       <a class="wordmark" href="#top" aria-label="The Give home">The Give</a>
       <nav class="nav-links" aria-label="Main navigation">
-        <a href="#music">Music</a><a href="#lyrics">Lyrics</a><a href="#story">Story</a><a href="#film">Film</a><a href="#shows">Shows</a><a href="#contact">Contact</a>
+        <a href="#music">Music</a><a href="#story">Story</a><a href="#film">Film</a><a href="#shows">Shows</a><a href="#contact">Contact</a>
       </nav>
       <button class="menu" aria-label="Open navigation">☰</button>
     </div>
@@ -205,24 +204,8 @@
           </div>
         </div>
         <div class="songs reveal" id="songs">
-          <div class="songs-intro"><span class="eyebrow">Individual recordings</span><h3>Pick a song. Choose a version.</h3></div>
+          <div class="songs-intro"><span class="eyebrow">Individual recordings</span><div><h3>Pick a song. Choose a version.</h3><p>Some songs carry a piece of the archive: open their original lyric sheets beside the recordings.</p></div></div>
           <div id="recordings" aria-live="polite"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section lyrics" id="lyrics">
-      <div class="shell">
-        <div class="section-head reveal"><span class="eyebrow">02 / From the archive</span><h2>The old lyric sheets.</h2></div>
-        <p class="hero-copy reveal" style="margin:-32px 0 42px;max-width:720px">Original handwritten and marked-up lyric sheets, shared from the band’s archive. Open any page to see it full size.</p>
-        <div class="lyric-grid reveal">
-          <figure class="lyric-sheet"><a href="assets/lyric-sheets/unmasking-my-scarlet.jpg"><img src="assets/lyric-sheets/unmasking-my-scarlet.jpg" alt="Original lyric sheet for Unmasking My Scarlet, with handwritten annotations" loading="lazy"></a><figcaption>Unmasking My Scarlet</figcaption></figure>
-          <figure class="lyric-sheet"><a href="assets/lyric-sheets/spinner-man.jpg"><img src="assets/lyric-sheets/spinner-man.jpg" alt="Original lyric sheet for Spinner Man" loading="lazy"></a><figcaption>Spinner Man</figcaption></figure>
-          <figure class="lyric-sheet"><a href="assets/lyric-sheets/lebanon.jpg"><img src="assets/lyric-sheets/lebanon.jpg" alt="Original lyric sheet for Lebanon" loading="lazy"></a><figcaption>Lebanon</figcaption></figure>
-          <figure class="lyric-sheet"><a href="assets/lyric-sheets/not-just-yet.jpg"><img src="assets/lyric-sheets/not-just-yet.jpg" alt="Original lyric sheet for Not Just Yet" loading="lazy"></a><figcaption>Not Just Yet</figcaption></figure>
-          <figure class="lyric-sheet"><a href="assets/lyric-sheets/seven-years.jpg"><img src="assets/lyric-sheets/seven-years.jpg" alt="Original lyric sheet for 7 Years" loading="lazy"></a><figcaption>7 Years</figcaption></figure>
-          <figure class="lyric-sheet"><a href="assets/lyric-sheets/yes-but.jpg"><img src="assets/lyric-sheets/yes-but.jpg" alt="Original lyric sheet for Yes But" loading="lazy"></a><figcaption>Yes But</figcaption></figure>
-          <figure class="lyric-sheet"><a href="assets/lyric-sheets/damnation.jpg"><img src="assets/lyric-sheets/damnation.jpg" alt="Original lyric sheet for Damnation" loading="lazy"></a><figcaption>Damnation</figcaption></figure>
         </div>
       </div>
     </section>
@@ -285,7 +268,7 @@
       <div class="footer-top">
         <a class="footer-mark" href="#top">The<br>Give</a>
         <div class="footer-col"><b>Listen</b><a href="https://open.spotify.com/artist/3IJOjwcOIgG6MDuJ1yIZKn">Spotify</a><a href="https://music.apple.com/us/artist/the-give/271352983">Apple Music</a></div>
-        <div class="footer-col"><b>Connect</b><a href="mailto:thegivebandct@gmail.com">thegivebandct@gmail.com</a><a href="#">Instagram</a><a href="https://www.youtube.com/@TheGiveCT" target="_blank" rel="noreferrer">YouTube</a></div>
+        <div class="footer-col"><b>Connect</b><a href="mailto:thegivebandct@gmail.com">thegivebandct@gmail.com</a><a href="https://www.instagram.com/thegivebandct/" target="_blank" rel="noreferrer">Instagram</a><a href="https://www.youtube.com/@TheGiveCT" target="_blank" rel="noreferrer">YouTube</a></div>
       </div>
       <div class="fine"><span>© 2026 The Give</span><span>Original rock from Fairfield County, Connecticut.</span></div>
     </div>
@@ -297,7 +280,20 @@
     const observer=new IntersectionObserver(entries=>entries.forEach(entry=>entry.isIntersecting&&entry.target.classList.add('in')),{threshold:.12});
     document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
     const recordings=document.querySelector('#recordings');
-    recordings.innerHTML=window.theGiveRecordings.map((album,albumIndex)=>`<details class="record" ${albumIndex===0?'open':''}><summary><span>${album.title}</span><span>${album.tracks.length} recordings</span></summary><ol class="track-list">${album.tracks.map((track,index)=>`<li><a href="${track.url}" target="_blank" rel="noreferrer"><span class="track-no">${String(index+1).padStart(2,'0')}</span><span>${track.title}</span><span class="track-go">Play ↗</span></a></li>`).join('')}</ol></details>`).join('');
+    const lyricSheets={
+      'Seven Years':'seven-years.jpg',
+      'Not Just Yet':'not-just-yet.jpg',
+      'Yes, But':'yes-but.jpg',
+      'Lebanon':'lebanon.jpg',
+      'Spinner Man':'spinner-man.jpg',
+      'Damn Nation':'damnation.jpg',
+      "Scarlett O'Hara":'unmasking-my-scarlet.jpg'
+    };
+    recordings.innerHTML=window.theGiveRecordings.map((album,albumIndex)=>`<details class="record" ${albumIndex===0?'open':''}><summary><span>${album.title}</span><span>${album.tracks.length} recordings</span></summary><ol class="track-list">${album.tracks.map((track,index)=>{
+      const sheet=lyricSheets[track.title.replace(/ \(Live\)$/,'')];
+      const sheetUrl=sheet?`assets/lyric-sheets/${sheet}`:'';
+      return `<li ${sheet?`class="has-sheet" style="--sheet-image:url('${sheetUrl}')"`:''}><a class="play-link" href="${track.url}" target="_blank" rel="noreferrer"><span class="track-no">${String(index+1).padStart(2,'0')}</span><span>${track.title}</span><span class="track-go">Play ↗</span></a>${sheet?`<a class="sheet-link" href="${sheetUrl}" target="_blank" rel="noreferrer" aria-label="View original lyric sheet for ${track.title}">Lyric sheet ↗</a>`:''}</li>`;
+    }).join('')}</ol></details>`).join('');
     document.querySelector('.menu').addEventListener('click',()=>{
       const nav=document.querySelector('.nav-links');
       nav.style.display=nav.style.display==='flex'?'none':'flex';
