@@ -70,9 +70,7 @@
     .album:hover figcaption{opacity:1;transform:none}
     .release-copy h3{font-family:var(--serif);font-weight:400;font-size:clamp(48px,6vw,78px);line-height:.95;margin:0 0 28px}
     .release-copy p{font-size:18px;max-width:34em;margin:0 0 22px}
-    .songs{margin-top:96px;border-top:1px solid var(--line)}
-    .songs-intro{display:grid;grid-template-columns:1fr 2fr;gap:40px;padding:44px 0 30px}
-    .songs-intro h3{font-family:var(--serif);font-size:clamp(38px,5vw,64px);font-weight:400;line-height:1;margin:0}
+    .songs{margin-top:64px}
     .record{border-top:1px solid var(--line)}
     .record:last-child{border-bottom:1px solid var(--line)}
     .record summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:1fr auto;align-items:center;gap:24px;padding:21px 0;font-size:14px;text-transform:uppercase;letter-spacing:.1em;font-weight:600}
@@ -147,7 +145,7 @@
       h1{font-size:clamp(78px,26vw,130px);margin-top:55px}
       .section{padding:80px 0}.section-head,.release-grid,.story-grid,.film-grid,.footer-top{grid-template-columns:1fr;gap:42px}
       .section-head{margin-bottom:45px}.story-copy{padding-top:10px}.photo{min-height:460px}
-      .songs-intro{grid-template-columns:1fr;gap:12px}.track-list{grid-template-columns:1fr}
+      .track-list{grid-template-columns:1fr}
       .mail:before{width:80%;opacity:.07}
       .show-row{grid-template-columns:1fr auto;gap:5px}.show-date{grid-column:1/-1}.show-row .btn{grid-column:2;grid-row:2}.members{grid-template-columns:1fr}
       .form{display:block}.form button{width:100%;border-top:1px solid var(--ink)}
@@ -204,7 +202,7 @@
           </div>
         </div>
         <div class="songs reveal" id="songs">
-          <div class="songs-intro"><span class="eyebrow">Individual recordings</span><div><h3>Pick a song. Choose a version.</h3><p>Some songs carry a piece of the archive: open their original lyric sheets beside the recordings.</p></div></div>
+          <h3 class="sr-only">Recordings by album</h3>
           <div id="recordings" aria-live="polite"></div>
         </div>
       </div>
