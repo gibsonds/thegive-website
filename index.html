@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="The Give — original rock from Fairfield County, Connecticut. Back together and streaming worldwide.">
+  <meta name="theme-color" content="#17130f">
+  <title>The Give — Back Together</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink:#17130f;
+      --paper:#f1eadf;
+      --paper-2:#e6dccd;
+      --cream:#fff9ef;
+      --red:#d7462d;
+      --acid:#d5df51;
+      --line:rgba(23,19,15,.22);
+      --sans:"DM Sans",sans-serif;
+      --serif:"Instrument Serif",Georgia,serif;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.5}
+    a{color:inherit;text-decoration:none}
+    button,input{font:inherit}
+    .shell{width:min(1400px,calc(100% - 48px));margin:auto}
+    .nav{position:absolute;z-index:10;top:0;left:0;width:100%;color:var(--cream)}
+    .nav-inner{height:88px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.28)}
+    .wordmark{font-family:var(--serif);font-size:30px;letter-spacing:.08em;text-transform:uppercase}
+    .nav-links{display:flex;align-items:center;gap:34px;font-size:13px;text-transform:uppercase;letter-spacing:.12em}
+    .nav-links a{position:relative}
+    .nav-links a:after{content:"";position:absolute;left:0;right:100%;bottom:-5px;height:1px;background:currentColor;transition:right .25s}
+    .nav-links a:hover:after{right:0}
+    .menu{display:none;border:0;background:none;color:inherit;font-size:24px}
+    .hero{min-height:100svh;position:relative;overflow:hidden;color:var(--cream);background:
+      radial-gradient(circle at 73% 28%,rgba(213,223,81,.22),transparent 25%),
+      linear-gradient(115deg,rgba(23,19,15,.62),rgba(23,19,15,.96)),
+      repeating-linear-gradient(97deg,#43392d 0,#43392d 2px,#231e18 2px,#231e18 8px)}
+    .hero:before{content:"";position:absolute;width:52vw;height:52vw;right:-8vw;top:7vh;border:1px solid rgba(255,249,239,.2);border-radius:50%;box-shadow:0 0 0 9vw rgba(255,249,239,.025),0 0 0 18vw rgba(255,249,239,.018)}
+    .hero:after{content:"";position:absolute;inset:0;opacity:.13;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.8'/%3E%3C/svg%3E")}
+    .hero-inner{min-height:100svh;position:relative;z-index:1;display:grid;grid-template-columns:1.5fr .5fr;align-items:end;padding:160px 0 56px}
+    .kicker{display:flex;align-items:center;gap:12px;text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:600}
+    .kicker:before{content:"";width:42px;height:1px;background:currentColor}
+    h1{font-family:var(--serif);font-weight:400;font-size:clamp(82px,15vw,230px);letter-spacing:-.065em;line-height:.72;margin:38px 0 58px;max-width:6ch}
+    h1 em{font-weight:400;color:var(--acid)}
+    .hero-copy{max-width:550px;font-size:clamp(18px,2vw,25px);line-height:1.35}
+    .hero-side{justify-self:end;align-self:end;width:220px;border-top:1px solid rgba(255,255,255,.4);padding-top:18px;font-size:13px;text-transform:uppercase;letter-spacing:.1em}
+    .hero-side strong{display:block;font-family:var(--serif);font-size:36px;line-height:1;text-transform:none;letter-spacing:0;margin-bottom:8px;color:var(--acid);font-weight:400}
+    .scroll{position:absolute;right:24px;bottom:50%;z-index:2;writing-mode:vertical-rl;text-transform:uppercase;letter-spacing:.18em;font-size:10px}
+    .ticker{overflow:hidden;background:var(--acid);border-block:1px solid var(--ink);white-space:nowrap;padding:14px 0;font-size:13px;text-transform:uppercase;letter-spacing:.15em}
+    .ticker-track{display:inline-block;animation:ticker 25s linear infinite}
+    @keyframes ticker{to{transform:translateX(-50%)}}
+    .section{padding:120px 0;border-bottom:1px solid var(--line)}
+    .section-head{display:grid;grid-template-columns:1fr 2fr;gap:40px;margin-bottom:70px}
+    .eyebrow{text-transform:uppercase;letter-spacing:.17em;font-size:11px;font-weight:600}
+    h2{font-family:var(--serif);font-size:clamp(54px,8vw,112px);line-height:.86;letter-spacing:-.045em;font-weight:400;margin:0}
+    .release{background:var(--cream)}
+    .release-grid{display:grid;grid-template-columns:1.18fr .82fr;gap:64px;align-items:center}
+    .album-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .album{margin:0;position:relative;overflow:hidden;background:var(--ink)}
+    .album img{display:block;width:100%;aspect-ratio:1;object-fit:cover;transition:transform .45s ease,opacity .45s ease}
+    .album figcaption{position:absolute;inset:auto 0 0;padding:35px 16px 13px;color:white;background:linear-gradient(transparent,rgba(0,0,0,.82));font-size:10px;text-transform:uppercase;letter-spacing:.11em;opacity:0;transform:translateY(8px);transition:.3s}
+    .album:hover img{transform:scale(1.025);opacity:.85}
+    .album:hover figcaption{opacity:1;transform:none}
+    .release-copy h3{font-family:var(--serif);font-weight:400;font-size:clamp(48px,6vw,78px);line-height:.95;margin:0 0 28px}
+    .release-copy p{font-size:18px;max-width:34em;margin:0 0 22px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 24px;border:1px solid var(--ink);text-transform:uppercase;letter-spacing:.12em;font-size:11px;font-weight:600;transition:.2s}
+    .btn:hover{background:var(--ink);color:var(--cream);transform:translateY(-2px)}
+    .btn.dark{background:var(--ink);color:var(--cream)}
+    .btn.dark:hover{background:var(--red);border-color:var(--red)}
+    .story{background:var(--paper)}
+    .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:12vw;align-items:start}
+    .photo{min-height:640px;position:relative;overflow:hidden;background:
+      linear-gradient(145deg,transparent 45%,rgba(213,223,81,.7) 45% 55%,transparent 55%),
+      radial-gradient(circle at 65% 35%,#756655 0 9%,transparent 9.3%),
+      radial-gradient(circle at 45% 43%,#a99178 0 12%,transparent 12.3%),
+      linear-gradient(130deg,#322a23,#796b5c)}
+    .photo:after{content:"PRESS PHOTO / REHEARSAL IMAGE";position:absolute;inset:auto 24px 24px;border-top:1px solid rgba(255,255,255,.55);padding-top:14px;color:white;letter-spacing:.14em;font-size:10px}
+    .story-copy{padding-top:90px}
+    .story-copy .big{font-family:var(--serif);font-size:clamp(39px,4vw,60px);line-height:1.05;margin:0 0 35px}
+    .story-copy p{font-size:18px;max-width:36em}
+    .members{margin-top:45px;padding-top:24px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:10px 28px;font-size:13px}
+    .members span{display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid var(--line);padding:9px 0}
+    .members i{font-style:normal;color:#6e6256}
+    .film{background:var(--ink);color:var(--cream);overflow:hidden}
+    .film-grid{display:grid;grid-template-columns:.72fr 1.28fr;gap:70px;align-items:center}
+    .film-card{aspect-ratio:16/10;position:relative;display:grid;place-items:center;background:
+      linear-gradient(rgba(23,19,15,.25),rgba(23,19,15,.75)),
+      repeating-linear-gradient(-8deg,#74634f 0,#74634f 3px,#3d352d 3px,#3d352d 9px);border:1px solid rgba(255,255,255,.25)}
+    .play{width:94px;height:94px;border-radius:50%;border:1px solid var(--cream);display:grid;place-items:center;font-size:24px;padding-left:4px;transition:.25s}
+    .film-card:hover .play{background:var(--acid);color:var(--ink);border-color:var(--acid);transform:scale(1.08)}
+    .film-copy h2{color:var(--acid);margin-bottom:30px}
+    .film-copy p{font-size:18px;max-width:34em}
+    .shows{background:var(--red)}
+    .show-row{display:grid;grid-template-columns:160px 1fr auto;gap:35px;align-items:center;border-top:1px solid var(--ink);padding:26px 0}
+    .show-row:last-child{border-bottom:1px solid var(--ink)}
+    .show-date{font-family:var(--serif);font-size:36px}
+    .show-place strong{font-size:19px;display:block}
+    .show-place span{font-size:13px;text-transform:uppercase;letter-spacing:.1em}
+    .mail{background:var(--acid);text-align:center}
+    .mail h2{max-width:10ch;margin:0 auto 28px}
+    .mail p{max-width:560px;margin:0 auto 35px;font-size:18px}
+    .form{display:flex;max-width:700px;margin:auto;border-bottom:2px solid var(--ink)}
+    .form input{flex:1;border:0;background:transparent;padding:19px 4px;color:var(--ink);outline:none;font-size:18px}
+    .form input::placeholder{color:rgba(23,19,15,.6)}
+    .form button{border:0;background:none;padding:15px 5px 15px 24px;text-transform:uppercase;letter-spacing:.15em;font-size:11px;font-weight:600;cursor:pointer}
+    footer{background:var(--ink);color:var(--cream);padding:68px 0 35px}
+    .footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:70px;padding-bottom:80px}
+    .footer-mark{font-family:var(--serif);font-size:clamp(56px,9vw,132px);line-height:.75;letter-spacing:-.06em;color:var(--acid)}
+    .footer-col{display:flex;flex-direction:column;gap:9px;font-size:14px}
+    .footer-col b{text-transform:uppercase;letter-spacing:.14em;font-size:10px;margin-bottom:8px;color:#a89d91}
+    .fine{border-top:1px solid rgba(255,255,255,.18);padding-top:24px;display:flex;justify-content:space-between;font-size:11px;color:#a89d91}
+    .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+    .reveal.in{opacity:1;transform:none}
+    @media(max-width:800px){
+      .shell{width:min(100% - 28px,1400px)}
+      .nav-inner{height:72px}.nav-links{display:none}.menu{display:block}
+      .hero-inner{grid-template-columns:1fr;padding-top:130px}.hero-side{justify-self:start;margin-top:50px}.scroll{display:none}
+      h1{font-size:clamp(78px,26vw,130px);margin-top:55px}
+      .section{padding:80px 0}.section-head,.release-grid,.story-grid,.film-grid,.footer-top{grid-template-columns:1fr;gap:42px}
+      .section-head{margin-bottom:45px}.story-copy{padding-top:10px}.photo{min-height:460px}
+      .show-row{grid-template-columns:1fr auto;gap:5px}.show-date{grid-column:1/-1}.show-row .btn{grid-column:2;grid-row:2}.members{grid-template-columns:1fr}
+      .form{display:block}.form button{width:100%;border-top:1px solid var(--ink)}
+      .footer-top{padding-bottom:50px}.fine{gap:20px;flex-direction:column}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ticker-track{animation:none}.reveal{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner shell">
+      <a class="wordmark" href="#top" aria-label="The Give home">The Give</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#music">Music</a><a href="#story">Story</a><a href="#film">Film</a><a href="#shows">Shows</a><a href="#contact">Contact</a>
+      </nav>
+      <button class="menu" aria-label="Open navigation">☰</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-inner shell">
+        <div>
+          <div class="kicker">Fairfield County, Connecticut</div>
+          <h1>The <em>Give</em></h1>
+          <p class="hero-copy">Poetic storytelling. Soulful vocals. Melodic rock with something real at the center.</p>
+        </div>
+        <div class="hero-side"><strong>Back together.</strong>Four albums, remastered and streaming worldwide.</div>
+      </div>
+      <span class="scroll">Scroll to listen ↓</span>
+    </section>
+
+    <div class="ticker" aria-hidden="true"><div class="ticker-track">THE GIVE · BACK TOGETHER · FOUR ALBUMS · STREAMING NOW · FAIRFIELD COUNTY, CT · THE GIVE · BACK TOGETHER · FOUR ALBUMS · STREAMING NOW · FAIRFIELD COUNTY, CT · </div></div>
+
+    <section class="section release" id="music">
+      <div class="shell">
+        <div class="section-head reveal"><span class="eyebrow">01 / Listen</span><h2>The songs found their way back.</h2></div>
+        <div class="release-grid">
+          <div class="album-grid reveal" aria-label="The Give's 2026 album releases">
+            <figure class="album"><img src="assets/albums/studio-recordings.jpg" alt="The Give — Studio Recordings album cover" width="1200" height="1200"><figcaption>Studio Recordings</figcaption></figure>
+            <figure class="album"><img src="assets/albums/acoustic-studio-recordings.jpg" alt="The Give — Acoustic Studio Recordings album cover" width="1200" height="1200" loading="lazy"><figcaption>Acoustic Studio Recordings</figcaption></figure>
+            <figure class="album"><img src="assets/albums/live-vol-1.jpg" alt="The Give — Live at Acoustic Cafe, Volume One album cover" width="1200" height="1200" loading="lazy"><figcaption>Live at Acoustic Cafe · Volume One</figcaption></figure>
+            <figure class="album"><img src="assets/albums/live-vol-2.jpg" alt="The Give — Live at Acoustic Cafe, Volume Two album cover" width="1200" height="1200" loading="lazy"><figcaption>Live at Acoustic Cafe · Volume Two</figcaption></figure>
+          </div>
+          <div class="release-copy reveal">
+            <div class="eyebrow">Four albums · one return</div>
+            <h3>A catalogue built to last.</h3>
+            <p>Hear the studio recordings, the remastered acoustic sessions, and two live volumes captured at Black Rock’s legendary Acoustic Cafe.</p>
+            <p>Four records from the band’s first chapter—available again for the first time in nearly twenty years.</p>
+            <div class="actions">
+              <a class="btn dark" href="https://open.spotify.com/artist/3IJOjwcOIgG6MDuJ1yIZKn" target="_blank" rel="noreferrer">Spotify ↗</a>
+              <a class="btn" href="https://music.apple.com/us/artist/the-give/271352983" target="_blank" rel="noreferrer">Apple Music ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section story" id="story">
+      <div class="shell">
+        <div class="section-head reveal"><span class="eyebrow">02 / About</span><h2>A second first act.</h2></div>
+        <div class="story-grid">
+          <div class="photo reveal" role="img" aria-label="Placeholder for a current photograph of The Give"></div>
+          <div class="story-copy reveal">
+            <p class="big">Rooted in Fairfield County’s music scene. Back together nearly twenty years later. The point was never nostalgia—it was finishing the conversation.</p>
+            <p>Founded in 2003 by poet Donald Cohen and musician Jon Saxon, The Give found its voice when singer and co-writer Sarah Peterson joined the collaboration. Today, the expanded lineup brings those songs forward with new energy, fresh arrangements, and the same belief in honest, human connection.</p>
+            <div class="members" aria-label="Band members">
+              <span><b>Sarah Peterson</b><i>Vocals</i></span>
+              <span><b>Jon Saxon</b><i>Music</i></span>
+              <span><b>Donald Cohen</b><i>Words</i></span>
+              <span><b>David Gibson</b><i>Guitar / vocals</i></span>
+              <span><b>John Shyloski</b><i>Bass / audio</i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section film" id="film">
+      <div class="shell film-grid">
+        <div class="film-copy reveal">
+          <span class="eyebrow">03 / Watch</span>
+          <h2>Getting the band back together.</h2>
+          <p>A short documentary about the early days, the long pause, and what made five musicians decide the story was not over.</p>
+          <div class="actions"><a class="btn" href="#" aria-label="Documentary link placeholder">Watch the film ↗</a></div>
+        </div>
+        <a class="film-card reveal" href="#" aria-label="Documentary video placeholder"><span class="play">▶</span></a>
+      </div>
+    </section>
+
+    <section class="section shows" id="shows">
+      <div class="shell">
+        <div class="section-head reveal"><span class="eyebrow">04 / Live</span><h2>See what happens next.</h2></div>
+        <div class="show-row reveal"><div class="show-date">2027</div><div class="show-place"><strong>Fairfield County, Connecticut</strong><span>First reunion show · details coming soon</span></div><a class="btn" href="#contact">Get updates</a></div>
+      </div>
+    </section>
+
+    <section class="section mail" id="contact">
+      <div class="shell reveal">
+        <span class="eyebrow">Stay close</span>
+        <h2>The next chapter is being written.</h2>
+        <p>New shows, recovered stories, and music from the archive—sent occasionally, never constantly.</p>
+        <form class="form" action="#" onsubmit="event.preventDefault(); this.classList.add('submitted'); this.querySelector('button').textContent='You’re on the list';">
+          <label class="sr-only" for="email">Email address</label>
+          <input id="email" type="email" autocomplete="email" placeholder="Your email address" required>
+          <button type="submit">Join the list →</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell">
+      <div class="footer-top">
+        <a class="footer-mark" href="#top">The<br>Give</a>
+        <div class="footer-col"><b>Listen</b><a href="https://open.spotify.com/artist/3IJOjwcOIgG6MDuJ1yIZKn">Spotify</a><a href="https://music.apple.com/us/artist/the-give/271352983">Apple Music</a></div>
+        <div class="footer-col"><b>Connect</b><a href="mailto:thegivebandct@gmail.com">thegivebandct@gmail.com</a><a href="#">Instagram</a><a href="#">YouTube</a></div>
+      </div>
+      <div class="fine"><span>© 2026 The Give</span><span>Original rock from Fairfield County, Connecticut.</span></div>
+    </div>
+  </footer>
+
+  <style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}</style>
+  <script>
+    const observer=new IntersectionObserver(entries=>entries.forEach(entry=>entry.isIntersecting&&entry.target.classList.add('in')),{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+    document.querySelector('.menu').addEventListener('click',()=>{
+      const nav=document.querySelector('.nav-links');
+      nav.style.display=nav.style.display==='flex'?'none':'flex';
+      Object.assign(nav.style,{position:'absolute',top:'72px',left:'14px',right:'14px',padding:'24px',background:'#17130f',flexDirection:'column',alignItems:'flex-start'});
+    });
+  </script>
+</body>
+</html>
