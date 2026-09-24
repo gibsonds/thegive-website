@@ -1,6 +1,6 @@
 # The Give website — band review punch list
 
-Prototype review URL: added after the first GitHub Pages deployment.
+Prototype review URL: https://gibsonds.github.io/thegive-website/
 
 ## Decisions the band needs to make
 
