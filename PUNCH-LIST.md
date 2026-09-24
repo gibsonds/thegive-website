@@ -15,6 +15,7 @@ Prototype review URL: https://gibsonds.github.io/thegive-website/
 
 ## Assets and links still needed
 
+- [x] Add direct Apple Music links for all individual song recordings, grouped by album.
 - [ ] Choose one current, high-resolution horizontal band photograph for the About section.
 - [ ] Supply a second performance, rehearsal, or archival photograph for the hero or documentary section.
 - [x] Add the final YouTube documentary URL.
