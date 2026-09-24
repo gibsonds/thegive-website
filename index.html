@@ -61,6 +61,9 @@
     .release-grid{display:grid;grid-template-columns:1.18fr .82fr;gap:64px;align-items:center}
     .album-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
     .album{margin:0;position:relative;overflow:hidden;background:var(--ink)}
+    .album.featured{grid-column:1/-1}
+    .album.featured img{aspect-ratio:2.1;object-position:center 38%}
+    .album-badge{position:absolute;top:14px;left:14px;z-index:1;background:var(--acid);padding:8px 10px;font-size:9px;text-transform:uppercase;letter-spacing:.12em;font-weight:600}
     .album img{display:block;width:100%;aspect-ratio:1;object-fit:cover;transition:transform .45s ease,opacity .45s ease}
     .album figcaption{position:absolute;inset:auto 0 0;padding:35px 16px 13px;color:white;background:linear-gradient(transparent,rgba(0,0,0,.82));font-size:10px;text-transform:uppercase;letter-spacing:.11em;opacity:0;transform:translateY(8px);transition:.3s}
     .album:hover img{transform:scale(1.025);opacity:.85}
@@ -101,6 +104,13 @@
     .members{margin-top:45px;padding-top:24px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:10px 28px;font-size:13px}
     .members span{display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid var(--line);padding:9px 0}
     .members i{font-style:normal;color:#6e6256}
+    .lyrics{background:var(--paper-2)}
+    .lyric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .lyric-sheet{margin:0;background:var(--cream);padding:10px}
+    .lyric-sheet a{display:block;overflow:hidden;background:#ddd}
+    .lyric-sheet img{display:block;width:100%;height:390px;object-fit:cover;object-position:top;transition:transform .35s}
+    .lyric-sheet a:hover img{transform:scale(1.025)}
+    .lyric-sheet figcaption{padding:12px 5px 4px;font-family:var(--serif);font-size:25px}
     .film{background:var(--ink);color:var(--cream);overflow:hidden}
     .film-grid{display:grid;grid-template-columns:.72fr 1.28fr;gap:70px;align-items:center}
     .film-card{aspect-ratio:16/10;position:relative;display:grid;place-items:center;background:
@@ -139,6 +149,7 @@
       .section{padding:80px 0}.section-head,.release-grid,.story-grid,.film-grid,.footer-top{grid-template-columns:1fr;gap:42px}
       .section-head{margin-bottom:45px}.story-copy{padding-top:10px}.photo{min-height:460px}
       .songs-intro{grid-template-columns:1fr;gap:12px}.track-list{grid-template-columns:1fr}
+      .lyric-grid{grid-template-columns:repeat(2,1fr)}.lyric-sheet img{height:300px}
       .show-row{grid-template-columns:1fr auto;gap:5px}.show-date{grid-column:1/-1}.show-row .btn{grid-column:2;grid-row:2}.members{grid-template-columns:1fr}
       .form{display:block}.form button{width:100%;border-top:1px solid var(--ink)}
       .footer-top{padding-bottom:50px}.fine{gap:20px;flex-direction:column}
@@ -151,7 +162,7 @@
     <div class="nav-inner shell">
       <a class="wordmark" href="#top" aria-label="The Give home">The Give</a>
       <nav class="nav-links" aria-label="Main navigation">
-        <a href="#music">Music</a><a href="#story">Story</a><a href="#film">Film</a><a href="#shows">Shows</a><a href="#contact">Contact</a>
+        <a href="#music">Music</a><a href="#lyrics">Lyrics</a><a href="#story">Story</a><a href="#film">Film</a><a href="#shows">Shows</a><a href="#contact">Contact</a>
       </nav>
       <button class="menu" aria-label="Open navigation">☰</button>
     </div>
@@ -177,14 +188,14 @@
         <div class="section-head reveal"><span class="eyebrow">01 / Listen</span><h2>The songs found their way back.</h2></div>
         <div class="release-grid">
           <div class="album-grid reveal" aria-label="The Give's 2026 album releases">
-            <figure class="album"><img src="assets/albums/studio-recordings.jpg" alt="The Give — Studio Recordings album cover" width="1200" height="1200"><figcaption>Studio Recordings</figcaption></figure>
+            <figure class="album featured"><span class="album-badge">Featured album</span><img src="assets/albums/studio-recordings.jpg" alt="The Give — Studio Recordings album cover" width="1200" height="1200"><figcaption>Studio Recordings</figcaption></figure>
             <figure class="album"><img src="assets/albums/acoustic-studio-recordings.jpg" alt="The Give — Acoustic Studio Recordings album cover" width="1200" height="1200" loading="lazy"><figcaption>Acoustic Studio Recordings</figcaption></figure>
             <figure class="album"><img src="assets/albums/live-vol-1.jpg" alt="The Give — Live at Acoustic Cafe, Volume One album cover" width="1200" height="1200" loading="lazy"><figcaption>Live at Acoustic Cafe · Volume One</figcaption></figure>
             <figure class="album"><img src="assets/albums/live-vol-2.jpg" alt="The Give — Live at Acoustic Cafe, Volume Two album cover" width="1200" height="1200" loading="lazy"><figcaption>Live at Acoustic Cafe · Volume Two</figcaption></figure>
           </div>
           <div class="release-copy reveal">
-            <div class="eyebrow">Four albums · one return</div>
-            <h3>A catalogue built to last.</h3>
+            <div class="eyebrow">Featured · Studio Recordings</div>
+            <h3>Start with the songs that started it.</h3>
             <p>Hear the studio recordings, the remastered acoustic sessions, and two live volumes captured at Black Rock’s legendary Acoustic Cafe.</p>
             <p>Four records from the band’s first chapter—available again for the first time in nearly twenty years.</p>
             <div class="actions">
@@ -196,6 +207,22 @@
         <div class="songs reveal" id="songs">
           <div class="songs-intro"><span class="eyebrow">Individual recordings</span><h3>Pick a song. Choose a version.</h3></div>
           <div id="recordings" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section lyrics" id="lyrics">
+      <div class="shell">
+        <div class="section-head reveal"><span class="eyebrow">02 / From the archive</span><h2>The old lyric sheets.</h2></div>
+        <p class="hero-copy reveal" style="margin:-32px 0 42px;max-width:720px">Original handwritten and marked-up lyric sheets, shared from the band’s archive. Open any page to see it full size.</p>
+        <div class="lyric-grid reveal">
+          <figure class="lyric-sheet"><a href="assets/lyric-sheets/unmasking-my-scarlet.jpg"><img src="assets/lyric-sheets/unmasking-my-scarlet.jpg" alt="Original lyric sheet for Unmasking My Scarlet, with handwritten annotations" loading="lazy"></a><figcaption>Unmasking My Scarlet</figcaption></figure>
+          <figure class="lyric-sheet"><a href="assets/lyric-sheets/spinner-man.jpg"><img src="assets/lyric-sheets/spinner-man.jpg" alt="Original lyric sheet for Spinner Man" loading="lazy"></a><figcaption>Spinner Man</figcaption></figure>
+          <figure class="lyric-sheet"><a href="assets/lyric-sheets/lebanon.jpg"><img src="assets/lyric-sheets/lebanon.jpg" alt="Original lyric sheet for Lebanon" loading="lazy"></a><figcaption>Lebanon</figcaption></figure>
+          <figure class="lyric-sheet"><a href="assets/lyric-sheets/not-just-yet.jpg"><img src="assets/lyric-sheets/not-just-yet.jpg" alt="Original lyric sheet for Not Just Yet" loading="lazy"></a><figcaption>Not Just Yet</figcaption></figure>
+          <figure class="lyric-sheet"><a href="assets/lyric-sheets/seven-years.jpg"><img src="assets/lyric-sheets/seven-years.jpg" alt="Original lyric sheet for 7 Years" loading="lazy"></a><figcaption>7 Years</figcaption></figure>
+          <figure class="lyric-sheet"><a href="assets/lyric-sheets/yes-but.jpg"><img src="assets/lyric-sheets/yes-but.jpg" alt="Original lyric sheet for Yes But" loading="lazy"></a><figcaption>Yes But</figcaption></figure>
+          <figure class="lyric-sheet"><a href="assets/lyric-sheets/damnation.jpg"><img src="assets/lyric-sheets/damnation.jpg" alt="Original lyric sheet for Damnation" loading="lazy"></a><figcaption>Damnation</figcaption></figure>
         </div>
       </div>
     </section>
