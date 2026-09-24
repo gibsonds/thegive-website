@@ -13,8 +13,7 @@ controls the web-display rights before public launch.
 ## Replace before launch
 
 - Replace the CSS-generated press-photo placeholder with a current band photograph.
-- Add the final YouTube documentary URL.
-- Add the band's Instagram and YouTube profile URLs.
+- Add the band's Instagram profile URL.
 - Connect the email form to the band's mailing-list provider.
 - Replace the provisional 2027 show row when a date and venue are confirmed.
 - Confirm final band-member credits and public-facing copy.

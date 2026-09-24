@@ -17,9 +17,9 @@ Prototype review URL: https://gibsonds.github.io/thegive-website/
 
 - [ ] Choose one current, high-resolution horizontal band photograph for the About section.
 - [ ] Supply a second performance, rehearsal, or archival photograph for the hero or documentary section.
-- [ ] Provide the final YouTube documentary URL.
+- [x] Add the final YouTube documentary URL.
 - [ ] Provide the official Instagram profile URL.
-- [ ] Provide the official YouTube channel URL.
+- [x] Add the official YouTube channel URL.
 - [ ] Confirm the Spotify and Apple Music artist links currently used in the prototype.
 - [ ] Supply a favicon or approve creation of one from the band’s wordmark/artwork.
 - [ ] Choose an Open Graph sharing image for links posted to Slack, Facebook, and text messages.
@@ -56,8 +56,7 @@ Prototype review URL: https://gibsonds.github.io/thegive-website/
 *Needed assets and links*
 • Current high-resolution horizontal band photo
 • Second performance/rehearsal/archive photo
-• Documentary URL
-• Official Instagram and YouTube URLs
+• Official Instagram URL
 • Confirm Spotify and Apple Music links
 • Favicon and social-sharing image
 
