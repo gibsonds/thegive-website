@@ -13,8 +13,7 @@ controls the web-display rights before public launch.
 ## Replace before launch
 
 - Replace the CSS-generated press-photo placeholder with a current band photograph.
-- Add the band's Instagram profile URL.
-- Connect the email form to the band's mailing-list provider.
+- Connect the mailing-list provider's tested hosted signup URL in `site-config.js` (see `MAILING-LIST-SETUP.md`).
 - Replace the provisional 2027 show row when a date and venue are confirmed.
 - Confirm final band-member credits and public-facing copy.
 

@@ -25,7 +25,7 @@
     html{scroll-behavior:smooth}
     body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.5}
     a{color:inherit;text-decoration:none}
-    button,input{font:inherit}
+    button{font:inherit}
     .shell{width:min(1400px,calc(100% - 48px));margin:auto}
     .nav{position:absolute;z-index:10;top:0;left:0;width:100%;color:var(--cream)}
     .nav-inner{height:88px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.28)}
@@ -64,10 +64,15 @@
     .album.featured{grid-column:1/-1}
     .album.featured img{aspect-ratio:2.1;object-position:center 38%}
     .album-badge{position:absolute;top:14px;left:14px;z-index:1;background:var(--acid);padding:8px 10px;font-size:9px;text-transform:uppercase;letter-spacing:.12em;font-weight:600}
+    .album-cover{display:block}
+    .album-cover:focus-visible{outline:3px solid var(--acid);outline-offset:-3px}
     .album img{display:block;width:100%;aspect-ratio:1;object-fit:cover;transition:transform .45s ease,opacity .45s ease}
-    .album figcaption{position:absolute;inset:auto 0 0;padding:35px 16px 13px;color:white;background:linear-gradient(transparent,rgba(0,0,0,.82));font-size:10px;text-transform:uppercase;letter-spacing:.11em;opacity:0;transform:translateY(8px);transition:.3s}
-    .album:hover img{transform:scale(1.025);opacity:.85}
-    .album:hover figcaption{opacity:1;transform:none}
+    .album figcaption{position:absolute;inset:auto 0 0;padding:42px 16px 13px;color:white;background:linear-gradient(transparent,rgba(0,0,0,.87));font-size:10px;text-transform:uppercase;letter-spacing:.11em;pointer-events:none}
+    .album-title{display:block;font-weight:600}
+    .album-links{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:6px}
+    .album-links a{pointer-events:auto;text-decoration:underline;text-underline-offset:3px}
+    .album-links a:hover{color:var(--acid)}
+    .album-cover:hover img{transform:scale(1.025);opacity:.85}
     .release-copy h3{font-family:var(--serif);font-weight:400;font-size:clamp(48px,6vw,78px);line-height:.95;margin:0 0 28px}
     .release-copy p{font-size:18px;max-width:34em;margin:0 0 22px}
     .songs{margin-top:64px}
@@ -125,11 +130,9 @@
     .mail:before{content:"";position:absolute;right:-5%;top:-25%;width:42%;height:150%;background:url("assets/lyric-sheets/not-just-yet.jpg") center/cover no-repeat;opacity:.12;transform:rotate(-11deg);pointer-events:none}
     .mail .shell{position:relative}
     .mail h2{max-width:10ch;margin:0 auto 28px}
-    .mail p{max-width:560px;margin:0 auto 35px;font-size:18px}
-    .form{display:flex;max-width:700px;margin:auto;border-bottom:2px solid var(--ink)}
-    .form input{flex:1;border:0;background:transparent;padding:19px 4px;color:var(--ink);outline:none;font-size:18px}
-    .form input::placeholder{color:rgba(23,19,15,.6)}
-    .form button{border:0;background:none;padding:15px 5px 15px 24px;text-transform:uppercase;letter-spacing:.15em;font-size:11px;font-weight:600;cursor:pointer}
+    .mail p{max-width:560px;margin:0 auto 26px;font-size:18px}
+    .mail .actions{justify-content:center;margin-top:0}
+    .mail .mail-note{font-size:12px;margin:20px auto 0}
     footer{background:var(--ink);color:var(--cream);padding:68px 0 35px}
     .footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:70px;padding-bottom:80px}
     .footer-mark{font-family:var(--serif);font-size:clamp(56px,9vw,132px);line-height:.75;letter-spacing:-.06em;color:var(--acid)}
@@ -148,7 +151,6 @@
       .track-list{grid-template-columns:1fr}
       .mail:before{width:80%;opacity:.07}
       .show-row{grid-template-columns:1fr auto;gap:5px}.show-date{grid-column:1/-1}.show-row .btn{grid-column:2;grid-row:2}.members{grid-template-columns:1fr}
-      .form{display:block}.form button{width:100%;border-top:1px solid var(--ink)}
       .footer-top{padding-bottom:50px}.fine{gap:20px;flex-direction:column}
     }
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ticker-track{animation:none}.reveal{opacity:1;transform:none}}
@@ -185,10 +187,10 @@
         <div class="section-head reveal"><span class="eyebrow">01 / Listen</span><h2>The songs found their way back.</h2></div>
         <div class="release-grid">
           <div class="album-grid reveal" aria-label="The Give's 2026 album releases">
-            <figure class="album featured"><span class="album-badge">Featured album</span><img src="assets/albums/studio-recordings.jpg" alt="The Give — Studio Recordings album cover" width="1200" height="1200"><figcaption>Studio Recordings</figcaption></figure>
-            <figure class="album"><img src="assets/albums/acoustic-studio-recordings.jpg" alt="The Give — Acoustic Studio Recordings album cover" width="1200" height="1200" loading="lazy"><figcaption>Acoustic Studio Recordings</figcaption></figure>
-            <figure class="album"><img src="assets/albums/live-vol-1.jpg" alt="The Give — Live at Acoustic Cafe, Volume One album cover" width="1200" height="1200" loading="lazy"><figcaption>Live at Acoustic Cafe · Volume One</figcaption></figure>
-            <figure class="album"><img src="assets/albums/live-vol-2.jpg" alt="The Give — Live at Acoustic Cafe, Volume Two album cover" width="1200" height="1200" loading="lazy"><figcaption>Live at Acoustic Cafe · Volume Two</figcaption></figure>
+            <figure class="album featured"><span class="album-badge">Featured album</span><a class="album-cover" href="https://open.spotify.com/album/0jwYcw38Cp71iofwwsKA4c" target="_blank" rel="noreferrer" aria-label="Open Studio Recordings on Spotify"><img src="assets/albums/studio-recordings.jpg" alt="The Give — Studio Recordings album cover" width="1200" height="1200"></a><figcaption><span class="album-title">Studio Recordings</span><span class="album-links"><a href="https://open.spotify.com/album/0jwYcw38Cp71iofwwsKA4c" target="_blank" rel="noreferrer">Spotify ↗</a><a href="https://music.apple.com/us/album/the-give-studio-recordings/1881194502" target="_blank" rel="noreferrer">Apple Music ↗</a></span></figcaption></figure>
+            <figure class="album"><a class="album-cover" href="https://open.spotify.com/album/4rvKMbMLk8fwyVsTCEwDkj" target="_blank" rel="noreferrer" aria-label="Open Acoustic Studio Recordings on Spotify"><img src="assets/albums/acoustic-studio-recordings.jpg" alt="The Give — Acoustic Studio Recordings album cover" width="1200" height="1200" loading="lazy"></a><figcaption><span class="album-title">Acoustic Studio Recordings</span><span class="album-links"><a href="https://open.spotify.com/album/4rvKMbMLk8fwyVsTCEwDkj" target="_blank" rel="noreferrer">Spotify ↗</a><a href="https://music.apple.com/us/album/acoustic-studio-recordings/6805016760" target="_blank" rel="noreferrer">Apple Music ↗</a></span></figcaption></figure>
+            <figure class="album"><a class="album-cover" href="https://open.spotify.com/album/358RnJ1v0uFa0ZFr3qYa9w" target="_blank" rel="noreferrer" aria-label="Open Live at Acoustic Cafe Volume One on Spotify"><img src="assets/albums/live-vol-1.jpg" alt="The Give — Live at Acoustic Cafe, Volume One album cover" width="1200" height="1200" loading="lazy"></a><figcaption><span class="album-title">Live at Acoustic Cafe · Volume One</span><span class="album-links"><a href="https://open.spotify.com/album/358RnJ1v0uFa0ZFr3qYa9w" target="_blank" rel="noreferrer">Spotify ↗</a><a href="https://music.apple.com/us/album/live-at-the-acoustic-cafe-vol-1/1885859067" target="_blank" rel="noreferrer">Apple Music ↗</a></span></figcaption></figure>
+            <figure class="album"><a class="album-cover" href="https://open.spotify.com/album/2yWu67p5SlEXGKJetZPeKQ" target="_blank" rel="noreferrer" aria-label="Open Live at Acoustic Cafe Volume Two on Spotify"><img src="assets/albums/live-vol-2.jpg" alt="The Give — Live at Acoustic Cafe, Volume Two album cover" width="1200" height="1200" loading="lazy"></a><figcaption><span class="album-title">Live at Acoustic Cafe · Volume Two</span><span class="album-links"><a href="https://open.spotify.com/album/2yWu67p5SlEXGKJetZPeKQ" target="_blank" rel="noreferrer">Spotify ↗</a><a href="https://music.apple.com/us/album/live-at-the-acoustic-cafe-volume-2/1894411086" target="_blank" rel="noreferrer">Apple Music ↗</a></span></figcaption></figure>
           </div>
           <div class="release-copy reveal">
             <div class="eyebrow">Featured · Studio Recordings</div>
@@ -251,12 +253,9 @@
       <div class="shell reveal">
         <span class="eyebrow">Stay close</span>
         <h2>The next chapter is being written.</h2>
-        <p>New shows, recovered stories, and music from the archive—sent occasionally, never constantly.</p>
-        <form class="form" action="#" onsubmit="event.preventDefault(); this.classList.add('submitted'); this.querySelector('button').textContent='You’re on the list';">
-          <label class="sr-only" for="email">Email address</label>
-          <input id="email" type="email" autocomplete="email" placeholder="Your email address" required>
-          <button type="submit">Join the list →</button>
-        </form>
+        <p id="mail-description">The email list for show dates and new music is opening soon. Follow along on Instagram for now.</p>
+        <div class="actions"><a class="btn dark" id="mail-cta" href="https://www.instagram.com/thegivebandct/" target="_blank" rel="noreferrer">Follow on Instagram ↗</a></div>
+        <p class="mail-note" id="mail-note">Email updates are coming soon.</p>
       </div>
     </section>
   </main>
@@ -274,7 +273,21 @@
 
   <style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}</style>
   <script src="tracks.js"></script>
+  <script src="site-config.js"></script>
   <script>
+    const signupUrl=window.theGiveSiteConfig?.newsletterSignupUrl;
+    if(signupUrl){
+      try{
+        const url=new URL(signupUrl);
+        if(url.protocol==='https:'){
+          document.querySelector('#mail-description').textContent='Sign up for occasional updates on The Give’s music and shows.';
+          const cta=document.querySelector('#mail-cta');
+          cta.href=url.href;
+          cta.textContent='Join the email list ↗';
+          document.querySelector('#mail-note').textContent='The signup opens in our mailing-list provider. You can unsubscribe from any email.';
+        }
+      }catch(error){console.warn('Invalid newsletter signup URL in site-config.js',error)}
+    }
     const observer=new IntersectionObserver(entries=>entries.forEach(entry=>entry.isIntersecting&&entry.target.classList.add('in')),{threshold:.12});
     document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
     const recordings=document.querySelector('#recordings');

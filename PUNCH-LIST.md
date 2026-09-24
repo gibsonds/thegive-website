@@ -17,6 +17,7 @@ Prototype review URL: https://gibsonds.github.io/thegive-website/
 ## Assets and links still needed
 
 - [x] Add direct Apple Music links for all individual song recordings, grouped by album.
+- [x] Link each album cover to its album on Spotify and add Spotify/Apple Music album links.
 - [ ] Later: source and approve a current, high-resolution horizontal band photograph for the About section; keep the placeholder until one is available.
 - [ ] Supply a second performance, rehearsal, or archival photograph for the hero or documentary section.
 - [x] Add the final YouTube documentary URL.
@@ -30,8 +31,9 @@ Prototype review URL: https://gibsonds.github.io/thegive-website/
 
 - [ ] Replace the provisional “2027 / Fairfield County” listing with a confirmed show—or hide Shows until one is announced.
 - [ ] Confirm the public booking/press email address.
-- [ ] Choose a mailing-list provider and connect the signup form.
-- [ ] Write a short signup confirmation and privacy statement.
+- [x] Remove the prototype form that falsely confirmed email signups.
+- [ ] Choose a mailing-list provider, configure double opt-in and a valid campaign mailing address, then connect its hosted signup URL.
+- [ ] Review and publish the prepared signup, confirmation, welcome, and privacy copy after the provider is chosen.
 
 ## Launch work
 
