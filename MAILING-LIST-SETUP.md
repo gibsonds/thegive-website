@@ -1,6 +1,6 @@
 # Mailing list launch setup
 
-Status (October 3, 2026): Brevo is the mailing-list provider. `The Give Updates` contains four band members who confirmed they want updates. The hosted form `The Give email updates` is saved with double confirmation. Brevo shows `thegivect.com` as authenticated and branded. The site now links to the hosted form. A fresh-address signup and confirmation test is still pending.
+Status (October 3, 2026): Brevo is the mailing-list provider. `The Give Updates` contains four band members who confirmed they want updates. The hosted form `The Give email updates` is saved with double confirmation. Brevo shows `thegivect.com` as authenticated and branded. The site embeds the form and links to its hosted page as a fallback. A fresh-address signup and confirmation test is still pending.
 
 ## Decisions and access
 
@@ -31,7 +31,7 @@ Privacy copy to review before publication: “The Give uses Brevo to collect you
 
 ## Connect the website
 
-1. The public HTTPS Brevo signup page is set in `site-config.js` as `newsletterSignupUrl`. The site changes the “Stay close” button from Instagram to “Join the email list” automatically. Visitors complete signup on Brevo’s hosted page, where confirmation and unsubscribe settings live.
+1. The public HTTPS Brevo signup page is set in `site-config.js`. The site embeds Brevo’s form in the “Stay close” section and keeps a link to its hosted page. Brevo handles signup and confirmation.
 2. Run a real test with an address not already on the audience: open the site on desktop and phone, follow the button, submit the form, receive the confirmation email, confirm, and verify the subscriber appears once in the audience. If a welcome email is configured, verify it too. Test the unsubscribe path before the first campaign.
 3. Then link the same signup URL from Instagram, Facebook, YouTube, and the showcase announcement. Mark the mailing-list item complete only after the end-to-end test passes.
 
