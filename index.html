@@ -83,15 +83,14 @@
     .record summary:after{content:"+";font-family:var(--serif);font-size:32px;font-weight:400;line-height:1}
     .record[open] summary:after{content:"−"}
     .track-list{list-style:none;margin:0;padding:0 0 28px;display:grid;grid-template-columns:repeat(2,1fr);column-gap:42px}
-    .track-list li{border-top:1px solid var(--line);display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:stretch;position:relative;isolation:isolate;overflow:hidden}
+    .track-list li{border-top:1px solid var(--line);padding:12px 2px;position:relative;isolation:isolate;overflow:hidden}
     .track-list li.has-sheet:before{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(90deg,rgba(255,249,239,.87),rgba(255,249,239,.45)),var(--sheet-image);background-size:cover;background-position:center 30%;opacity:0;transition:opacity .25s}
     .track-list li.has-sheet:hover:before,.track-list li.has-sheet:focus-within:before{opacity:1}
-    .track-list .play-link{display:grid;grid-template-columns:30px 1fr auto;gap:12px;align-items:center;padding:13px 2px;font-size:14px;transition:padding .2s,background .2s}
-    .track-list .play-link:hover{padding-left:10px;background:rgba(23,19,15,.04)}
-    .sheet-link{display:flex;align-items:center;padding:9px 4px 9px 12px;font-size:10px;text-transform:uppercase;letter-spacing:.1em;font-weight:600;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
-    .sheet-link:hover{color:var(--red)}
+    .track-heading{display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;align-items:baseline;font-size:14px}
+    .track-links{display:flex;flex-wrap:wrap;gap:6px 18px;margin:7px 0 0 42px}
+    .track-links a{font-size:10px;text-transform:uppercase;letter-spacing:.1em;font-weight:600;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+    .track-links a:hover{color:var(--red)}
     .track-no{font-size:10px;color:#817568;font-variant-numeric:tabular-nums}
-    .track-go{font-size:10px;text-transform:uppercase;letter-spacing:.1em}
     .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
     .btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 24px;border:1px solid var(--ink);text-transform:uppercase;letter-spacing:.12em;font-size:11px;font-weight:600;transition:.2s}
     .btn:hover{background:var(--ink);color:var(--cream);transform:translateY(-2px)}
@@ -320,7 +319,7 @@
     recordings.innerHTML=window.theGiveRecordings.map((album,albumIndex)=>`<details class="record" ${albumIndex===0?'open':''}><summary><span>${album.title}</span><span>${album.tracks.length} recordings</span></summary><ol class="track-list">${album.tracks.map((track,index)=>{
       const sheet=lyricSheets[track.title.replace(/ \(Live\)$/,'')];
       const sheetUrl=sheet?`assets/lyric-sheets/${sheet}`:'';
-      return `<li ${sheet?`class="has-sheet" style="--sheet-image:url('${sheetUrl}')"`:''}><a class="play-link" href="${track.url}" target="_blank" rel="noreferrer"><span class="track-no">${String(index+1).padStart(2,'0')}</span><span>${track.title}</span><span class="track-go">Play ↗</span></a>${sheet?`<a class="sheet-link" href="${sheetUrl}" target="_blank" rel="noreferrer" aria-label="View original lyric sheet for ${track.title}">Lyric sheet ↗</a>`:''}</li>`;
+      return `<li ${sheet?`class="has-sheet" style="--sheet-image:url('${sheetUrl}')"`:''}><div class="track-heading"><span class="track-no">${String(index+1).padStart(2,'0')}</span><span>${track.title}</span></div><div class="track-links"><a href="${track.spotifyUrl}" target="_blank" rel="noreferrer" aria-label="Play ${track.title} on Spotify">Spotify ↗</a><a href="${track.appleUrl}" target="_blank" rel="noreferrer" aria-label="Play ${track.title} on Apple Music">Apple Music ↗</a>${sheet?`<a href="${sheetUrl}" target="_blank" rel="noreferrer" aria-label="View original lyric sheet for ${track.title}">Lyric sheet ↗</a>`:''}</div></li>`;
     }).join('')}</ol></details>`).join('');
     document.querySelector('.menu').addEventListener('click',()=>{
       const nav=document.querySelector('.nav-links');
