@@ -1,0 +1,44 @@
+{
+  "artist": {
+    "name": "The Give",
+    "url": "https://thegivect.com/",
+    "description": "Original rock from Fairfield County, Connecticut.",
+    "genre": "Rock",
+    "sameAs": [
+      "https://open.spotify.com/artist/3IJOjwcOIgG6MDuJ1yIZKn",
+      "https://music.apple.com/us/artist/the-give/271352983",
+      "https://www.instagram.com/thegivebandct/",
+      "https://www.youtube.com/@TheGiveCT"
+    ]
+  },
+  "albums": [
+    {
+      "slug": "studio-recordings",
+      "image": "assets/albums/studio-recordings.jpg",
+      "spotifyUrl": "https://open.spotify.com/album/0jwYcw38Cp71iofwwsKA4c",
+      "appleUrl": "https://music.apple.com/us/album/the-give-studio-recordings/1881194502",
+      "title": "The Give \u2014 Studio Recordings"
+    },
+    {
+      "slug": "acoustic-studio-recordings",
+      "image": "assets/albums/acoustic-studio-recordings.jpg",
+      "spotifyUrl": "https://open.spotify.com/album/4rvKMbMLk8fwyVsTCEwDkj",
+      "appleUrl": "https://music.apple.com/us/album/acoustic-studio-recordings/6805016760",
+      "title": "Acoustic Studio Recordings"
+    },
+    {
+      "slug": "live-at-acoustic-cafe-vol-1",
+      "image": "assets/albums/live-vol-1.jpg",
+      "spotifyUrl": "https://open.spotify.com/album/358RnJ1v0uFa0ZFr3qYa9w",
+      "appleUrl": "https://music.apple.com/us/album/live-at-the-acoustic-cafe-vol-1/1885859067",
+      "title": "Live at the Acoustic Cafe \u2014 Volume One"
+    },
+    {
+      "slug": "live-at-acoustic-cafe-vol-2",
+      "image": "assets/albums/live-vol-2.jpg",
+      "spotifyUrl": "https://open.spotify.com/album/2yWu67p5SlEXGKJetZPeKQ",
+      "appleUrl": "https://music.apple.com/us/album/live-at-the-acoustic-cafe-volume-2/1894411086",
+      "title": "Live at the Acoustic Cafe \u2014 Volume Two"
+    }
+  ]
+}

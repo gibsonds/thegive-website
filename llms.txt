@@ -1,0 +1,16 @@
+# The Give
+
+> The Give is a rock band from Fairfield County, Connecticut. This is the band's official website.
+
+## Public sources
+
+- [Official website](https://thegivect.com/): Band story, music, documentary, show updates, and public contact links.
+- [Recordings by album](https://thegivect.com/#songs): Four albums and 63 individual recordings, with Spotify and Apple Music links. Titles and links are available in the HTML without JavaScript.
+- [Structured music catalog](https://thegivect.com/catalog.jsonld): Schema.org MusicGroup, MusicAlbum, and MusicRecording data, including album-specific recording identities and official listening links.
+- [Sitemap](https://thegivect.com/sitemap.xml): Canonical public HTML pages.
+
+## Catalog scope
+
+The catalog describes the four releases linked from the website, not a claim of a complete lifetime discography. Studio, acoustic, and live recordings with similar titles are separate recordings. Release dates, durations, songwriter credits, and recording identifiers beyond the published platform links are omitted when not established by the site's public content. The provisional 2027 show teaser is not a confirmed event.
+
+This file is an optional reading guide, not an access-control policy or a grant of content-use rights. It does not guarantee inclusion or ranking in search or AI answers.

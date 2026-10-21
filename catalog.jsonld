@@ -1,0 +1,1576 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://thegivect.com/#website",
+      "name": "The Give",
+      "url": "https://thegivect.com/",
+      "about": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "MusicGroup",
+      "@id": "https://thegivect.com/#the-give",
+      "name": "The Give",
+      "url": "https://thegivect.com/",
+      "description": "Original rock from Fairfield County, Connecticut.",
+      "genre": "Rock",
+      "sameAs": [
+        "https://open.spotify.com/artist/3IJOjwcOIgG6MDuJ1yIZKn",
+        "https://music.apple.com/us/artist/the-give/271352983",
+        "https://www.instagram.com/thegivebandct/",
+        "https://www.youtube.com/@TheGiveCT"
+      ],
+      "album": [
+        {
+          "@id": "https://thegivect.com/#album-studio-recordings"
+        },
+        {
+          "@id": "https://thegivect.com/#album-acoustic-studio-recordings"
+        },
+        {
+          "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-1"
+        },
+        {
+          "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-2"
+        }
+      ]
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://thegivect.com/#album-studio-recordings",
+      "name": "The Give — Studio Recordings",
+      "url": "https://thegivect.com/#album-studio-recordings",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "image": "https://thegivect.com/assets/albums/studio-recordings.jpg",
+      "sameAs": [
+        "https://open.spotify.com/album/0jwYcw38Cp71iofwwsKA4c",
+        "https://music.apple.com/us/album/the-give-studio-recordings/1881194502"
+      ],
+      "numTracks": 14,
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 14,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1881194503"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1881194504"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1881194505"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1881194506"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1881194507"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1881194508"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1881194509"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1881194510"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1881194511"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1881194512"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 11,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1881194513"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 12,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1881194514"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 13,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1881194515"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 14,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1881194516"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://thegivect.com/#album-acoustic-studio-recordings",
+      "name": "Acoustic Studio Recordings",
+      "url": "https://thegivect.com/#album-acoustic-studio-recordings",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "image": "https://thegivect.com/assets/albums/acoustic-studio-recordings.jpg",
+      "sameAs": [
+        "https://open.spotify.com/album/4rvKMbMLk8fwyVsTCEwDkj",
+        "https://music.apple.com/us/album/acoustic-studio-recordings/6805016760"
+      ],
+      "numTracks": 14,
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 14,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://thegivect.com/#recording-6805016770"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://thegivect.com/#recording-6805016778"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@id": "https://thegivect.com/#recording-6805016779"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@id": "https://thegivect.com/#recording-6805016780"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@id": "https://thegivect.com/#recording-6805016811"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@id": "https://thegivect.com/#recording-6805016812"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "item": {
+              "@id": "https://thegivect.com/#recording-6805016813"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "item": {
+              "@id": "https://thegivect.com/#recording-6805016814"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "item": {
+              "@id": "https://thegivect.com/#recording-6805016815"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "item": {
+              "@id": "https://thegivect.com/#recording-6805016816"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 11,
+            "item": {
+              "@id": "https://thegivect.com/#recording-6805016817"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 12,
+            "item": {
+              "@id": "https://thegivect.com/#recording-6805016818"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 13,
+            "item": {
+              "@id": "https://thegivect.com/#recording-6805016819"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 14,
+            "item": {
+              "@id": "https://thegivect.com/#recording-6805016820"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-1",
+      "name": "Live at the Acoustic Cafe — Volume One",
+      "url": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-1",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "image": "https://thegivect.com/assets/albums/live-vol-1.jpg",
+      "sameAs": [
+        "https://open.spotify.com/album/358RnJ1v0uFa0ZFr3qYa9w",
+        "https://music.apple.com/us/album/live-at-the-acoustic-cafe-vol-1/1885859067"
+      ],
+      "numTracks": 19,
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 19,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1885859071"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1885859073"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1885859074"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1885859166"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1885859167"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1885859168"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1885859169"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1885859172"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1885859173"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1885859174"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 11,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1885859175"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 12,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1885859176"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 13,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1885859178"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 14,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1885859179"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 15,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1885859181"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 16,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1885859182"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 17,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1885859183"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 18,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1885859184"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 19,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1885859186"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-2",
+      "name": "Live at the Acoustic Cafe — Volume Two",
+      "url": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-2",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "image": "https://thegivect.com/assets/albums/live-vol-2.jpg",
+      "sameAs": [
+        "https://open.spotify.com/album/2yWu67p5SlEXGKJetZPeKQ",
+        "https://music.apple.com/us/album/live-at-the-acoustic-cafe-volume-2/1894411086"
+      ],
+      "numTracks": 16,
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 16,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1894411087"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1894411088"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1894411089"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1894411090"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1894411091"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1894411092"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1894411093"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1894411094"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1894411095"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1894411096"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 11,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1894411097"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 12,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1894411098"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 13,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1894411100"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 14,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1894411101"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 15,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1894411102"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 16,
+            "item": {
+              "@id": "https://thegivect.com/#recording-1894411103"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1881194503",
+      "name": "Star to Star",
+      "url": "https://thegivect.com/#recording-1881194503",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-studio-recordings"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/5GpXyOnKU5huTR4yBUETUD",
+        "https://music.apple.com/us/song/1881194503"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1881194504",
+      "name": "Foggy Night",
+      "url": "https://thegivect.com/#recording-1881194504",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-studio-recordings"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/4DyVqn2nPbFvlbhysGG94K",
+        "https://music.apple.com/us/song/1881194504"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1881194505",
+      "name": "Foggy Night (Radio Edit)",
+      "url": "https://thegivect.com/#recording-1881194505",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-studio-recordings"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/2BDMB5yj6DhquTU6PvmJtN",
+        "https://music.apple.com/us/song/1881194505"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1881194506",
+      "name": "The Only",
+      "url": "https://thegivect.com/#recording-1881194506",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-studio-recordings"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/0UdsBWEgPFXmNCzF1I556n",
+        "https://music.apple.com/us/song/1881194506"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1881194507",
+      "name": "Feeling the Fall",
+      "url": "https://thegivect.com/#recording-1881194507",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-studio-recordings"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/0jezTInvpyxkGZw78kdf6Y",
+        "https://music.apple.com/us/song/1881194507"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1881194508",
+      "name": "Anywhere",
+      "url": "https://thegivect.com/#recording-1881194508",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-studio-recordings"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/5yH6fbmt6Sl8bqpL5MFpMS",
+        "https://music.apple.com/us/song/1881194508"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1881194509",
+      "name": "Seven Years",
+      "url": "https://thegivect.com/#recording-1881194509",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-studio-recordings"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/7fnyFPYec8xwiXogTU11xL",
+        "https://music.apple.com/us/song/1881194509"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1881194510",
+      "name": "Not Just Yet",
+      "url": "https://thegivect.com/#recording-1881194510",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-studio-recordings"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/3BNB4YCS34OKcnMLDWMGY4",
+        "https://music.apple.com/us/song/1881194510"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1881194511",
+      "name": "Yes, But",
+      "url": "https://thegivect.com/#recording-1881194511",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-studio-recordings"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/0h8oznmv1MWh8sZSgte2xg",
+        "https://music.apple.com/us/song/1881194511"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1881194512",
+      "name": "Little John",
+      "url": "https://thegivect.com/#recording-1881194512",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-studio-recordings"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/3ptZsrv7YS9fFYgaBEARXn",
+        "https://music.apple.com/us/song/1881194512"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1881194513",
+      "name": "Foggy Nights (Demo)",
+      "url": "https://thegivect.com/#recording-1881194513",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-studio-recordings"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/1QmpmVGqdfmgLoLQc6SaEC",
+        "https://music.apple.com/us/song/1881194513"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1881194514",
+      "name": "Star to Star (Instrumental)",
+      "url": "https://thegivect.com/#recording-1881194514",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-studio-recordings"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/6FVi7IkraJcaxGlZK759u2",
+        "https://music.apple.com/us/song/1881194514"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1881194515",
+      "name": "Foggy Nights (Instrumental)",
+      "url": "https://thegivect.com/#recording-1881194515",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-studio-recordings"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/70Z9dLu8dVJhtp0aEafvgF",
+        "https://music.apple.com/us/song/1881194515"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1881194516",
+      "name": "The Only (Instrumental)",
+      "url": "https://thegivect.com/#recording-1881194516",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-studio-recordings"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/4exuvlf79yqEsGGPl3Ye6O",
+        "https://music.apple.com/us/song/1881194516"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-6805016770",
+      "name": "Tommy's Place",
+      "url": "https://thegivect.com/#recording-6805016770",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-acoustic-studio-recordings"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/2VswHJpRoUj2xkPeWvjwmr",
+        "https://music.apple.com/us/song/6805016770"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-6805016778",
+      "name": "Can't Look Up Anymore",
+      "url": "https://thegivect.com/#recording-6805016778",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-acoustic-studio-recordings"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/7k4PqC5nz3BTz1OkMZlQPK",
+        "https://music.apple.com/us/song/6805016778"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-6805016779",
+      "name": "Foggy Night",
+      "url": "https://thegivect.com/#recording-6805016779",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-acoustic-studio-recordings"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/1HeiafHAbA1PhEGqbhyNMP",
+        "https://music.apple.com/us/song/6805016779"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-6805016780",
+      "name": "Damn Nation",
+      "url": "https://thegivect.com/#recording-6805016780",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-acoustic-studio-recordings"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/2IyT3gQvfDDHoJuJHhABH8",
+        "https://music.apple.com/us/song/6805016780"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-6805016811",
+      "name": "Yes, But",
+      "url": "https://thegivect.com/#recording-6805016811",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-acoustic-studio-recordings"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/3U0fpYwOHIIxSa1uLq2NI5",
+        "https://music.apple.com/us/song/6805016811"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-6805016812",
+      "name": "Hurricane Larry",
+      "url": "https://thegivect.com/#recording-6805016812",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-acoustic-studio-recordings"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/6UxYDAgIkHZnaIb8DB1DNM",
+        "https://music.apple.com/us/song/6805016812"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-6805016813",
+      "name": "Seven Years",
+      "url": "https://thegivect.com/#recording-6805016813",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-acoustic-studio-recordings"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/7xzfVj58J4HgpjZOzhyoI3",
+        "https://music.apple.com/us/song/6805016813"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-6805016814",
+      "name": "Look What I've Made",
+      "url": "https://thegivect.com/#recording-6805016814",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-acoustic-studio-recordings"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/1AiDtznKW1aDCfmHUFUsqP",
+        "https://music.apple.com/us/song/6805016814"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-6805016815",
+      "name": "You're All Mine",
+      "url": "https://thegivect.com/#recording-6805016815",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-acoustic-studio-recordings"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/16wEyos2fJTOqYt4VhSz5O",
+        "https://music.apple.com/us/song/6805016815"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-6805016816",
+      "name": "Lebanon",
+      "url": "https://thegivect.com/#recording-6805016816",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-acoustic-studio-recordings"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/4SluDecxwzFLXTuESJdS5k",
+        "https://music.apple.com/us/song/6805016816"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-6805016817",
+      "name": "Scarlett O'Hara",
+      "url": "https://thegivect.com/#recording-6805016817",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-acoustic-studio-recordings"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/06OF1gOnMh0owtebLluoxj",
+        "https://music.apple.com/us/song/6805016817"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-6805016818",
+      "name": "Spinner Man",
+      "url": "https://thegivect.com/#recording-6805016818",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-acoustic-studio-recordings"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/7a6btX3fnSyjnGD6GaJvtE",
+        "https://music.apple.com/us/song/6805016818"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-6805016819",
+      "name": "Touch Me",
+      "url": "https://thegivect.com/#recording-6805016819",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-acoustic-studio-recordings"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/4FOdn9eujbDLhdERV6Gy6X",
+        "https://music.apple.com/us/song/6805016819"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-6805016820",
+      "name": "The Only",
+      "url": "https://thegivect.com/#recording-6805016820",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-acoustic-studio-recordings"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/1hAZ3XCR3llm2fBJyBBPi2",
+        "https://music.apple.com/us/song/6805016820"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1885859071",
+      "name": "Closer to You (Live)",
+      "url": "https://thegivect.com/#recording-1885859071",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-1"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/6JNN7vvjSwdxrXVQdmjmVS",
+        "https://music.apple.com/us/song/1885859071"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1885859073",
+      "name": "Seven Years (Live)",
+      "url": "https://thegivect.com/#recording-1885859073",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-1"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/1Z2rzpFaOOGS4JNnfn22tu",
+        "https://music.apple.com/us/song/1885859073"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1885859074",
+      "name": "Where I Stood (Live)",
+      "url": "https://thegivect.com/#recording-1885859074",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-1"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/3BXejIv7Havz1i2lezKieb",
+        "https://music.apple.com/us/song/1885859074"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1885859166",
+      "name": "Look What I've Made (Live)",
+      "url": "https://thegivect.com/#recording-1885859166",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-1"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/65ej2FwtOeVRZ28hoHucFc",
+        "https://music.apple.com/us/song/1885859166"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1885859167",
+      "name": "Little John (Live)",
+      "url": "https://thegivect.com/#recording-1885859167",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-1"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/1az1iaL7d2DRf3sY8vEDjL",
+        "https://music.apple.com/us/song/1885859167"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1885859168",
+      "name": "Yes, But (Live)",
+      "url": "https://thegivect.com/#recording-1885859168",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-1"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/2sVPniUZZB3yqlkv8GbjUw",
+        "https://music.apple.com/us/song/1885859168"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1885859169",
+      "name": "Not Just Yet (Live)",
+      "url": "https://thegivect.com/#recording-1885859169",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-1"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/0HXEIt6hWfHxxc0ZnN3pku",
+        "https://music.apple.com/us/song/1885859169"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1885859172",
+      "name": "Hurricane Larry (Live)",
+      "url": "https://thegivect.com/#recording-1885859172",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-1"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/5Df7N2xnZftqTgYUXvxUru",
+        "https://music.apple.com/us/song/1885859172"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1885859173",
+      "name": "Scarlett O'Hara (Live)",
+      "url": "https://thegivect.com/#recording-1885859173",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-1"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/1kzFjik8Go457Y8XqXMdaF",
+        "https://music.apple.com/us/song/1885859173"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1885859174",
+      "name": "Foggy Night (Live)",
+      "url": "https://thegivect.com/#recording-1885859174",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-1"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/2rY1Dogw391T8fTf4nlMI3",
+        "https://music.apple.com/us/song/1885859174"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1885859175",
+      "name": "Lebanon (Live)",
+      "url": "https://thegivect.com/#recording-1885859175",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-1"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/5xrCmYGJ6mxG5oyi8f9DqJ",
+        "https://music.apple.com/us/song/1885859175"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1885859176",
+      "name": "Black Horse and the Cherry Tree (Live)",
+      "url": "https://thegivect.com/#recording-1885859176",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-1"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/3IJmiTBA99m8cMImRWtnCw",
+        "https://music.apple.com/us/song/1885859176"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1885859178",
+      "name": "Spinner Man (Live)",
+      "url": "https://thegivect.com/#recording-1885859178",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-1"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/4QJEV4TbqG8ErggeTnXttU",
+        "https://music.apple.com/us/song/1885859178"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1885859179",
+      "name": "Time After Time (Live)",
+      "url": "https://thegivect.com/#recording-1885859179",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-1"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/424SIepl8lzZy3fWD0d1vp",
+        "https://music.apple.com/us/song/1885859179"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1885859181",
+      "name": "Breathe (2 am) [Live]",
+      "url": "https://thegivect.com/#recording-1885859181",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-1"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/07M88VOm6l8rfjPMdZpStS",
+        "https://music.apple.com/us/song/1885859181"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1885859182",
+      "name": "Anywhere (Live)",
+      "url": "https://thegivect.com/#recording-1885859182",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-1"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/7FdLvYl23mZlWPeY9tU0zw",
+        "https://music.apple.com/us/song/1885859182"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1885859183",
+      "name": "Sometimes (Live)",
+      "url": "https://thegivect.com/#recording-1885859183",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-1"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/7puIJYEwdcDEU1jLt7lZ8W",
+        "https://music.apple.com/us/song/1885859183"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1885859184",
+      "name": "Hear Me Out (Live)",
+      "url": "https://thegivect.com/#recording-1885859184",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-1"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/2SD4TD0B7A9VVQqGeDcpcq",
+        "https://music.apple.com/us/song/1885859184"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1885859186",
+      "name": "Damn Nation (Live)",
+      "url": "https://thegivect.com/#recording-1885859186",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-1"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/7lJ3uCjgH4zsn4vZcVhuy2",
+        "https://music.apple.com/us/song/1885859186"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1894411087",
+      "name": "Hurricane Larry (Live)",
+      "url": "https://thegivect.com/#recording-1894411087",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-2"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/2T4HxpA8uUBwTGAnbF4Uou",
+        "https://music.apple.com/us/song/1894411087"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1894411088",
+      "name": "You're All Mine (Live)",
+      "url": "https://thegivect.com/#recording-1894411088",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-2"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/2VjiXA425NfKFKoyF4xwZg",
+        "https://music.apple.com/us/song/1894411088"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1894411089",
+      "name": "The Only (Live)",
+      "url": "https://thegivect.com/#recording-1894411089",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-2"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/6qIXZhUnlQKx9PjFMuYOXd",
+        "https://music.apple.com/us/song/1894411089"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1894411090",
+      "name": "Touch Me (Live)",
+      "url": "https://thegivect.com/#recording-1894411090",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-2"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/6aKnvCCzQy0LkwJBvzKOmS",
+        "https://music.apple.com/us/song/1894411090"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1894411091",
+      "name": "Yes, But (Live)",
+      "url": "https://thegivect.com/#recording-1894411091",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-2"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/2lXFGOe60Bv0NpmUpgDEoY",
+        "https://music.apple.com/us/song/1894411091"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1894411092",
+      "name": "Tommy's Place (Live)",
+      "url": "https://thegivect.com/#recording-1894411092",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-2"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/47O27QpvqRHBA1JsyexVfc",
+        "https://music.apple.com/us/song/1894411092"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1894411093",
+      "name": "You Don't Care (Live)",
+      "url": "https://thegivect.com/#recording-1894411093",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-2"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/734FBgNoK0uZwkeeHgDuZp",
+        "https://music.apple.com/us/song/1894411093"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1894411094",
+      "name": "The Mask (Live)",
+      "url": "https://thegivect.com/#recording-1894411094",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-2"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/3URW4i30nXViRRVrhbWN0x",
+        "https://music.apple.com/us/song/1894411094"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1894411095",
+      "name": "Sometimes (Live)",
+      "url": "https://thegivect.com/#recording-1894411095",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-2"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/3H5J6y0tJRYdaG1E6RQXnr",
+        "https://music.apple.com/us/song/1894411095"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1894411096",
+      "name": "Lebanon (Live)",
+      "url": "https://thegivect.com/#recording-1894411096",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-2"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/4MPk4u25CsIa52fjbluxpK",
+        "https://music.apple.com/us/song/1894411096"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1894411097",
+      "name": "If I Hadn't Met You (Live)",
+      "url": "https://thegivect.com/#recording-1894411097",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-2"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/26AlYbOfYay1egO7rJlQrd",
+        "https://music.apple.com/us/song/1894411097"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1894411098",
+      "name": "Hear Me Out (Live)",
+      "url": "https://thegivect.com/#recording-1894411098",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-2"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/5fnF0tRNvc6cxEs7WKrE2v",
+        "https://music.apple.com/us/song/1894411098"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1894411100",
+      "name": "Seven Years (Live)",
+      "url": "https://thegivect.com/#recording-1894411100",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-2"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/43NoGsHyrRKVO3axQDgRrb",
+        "https://music.apple.com/us/song/1894411100"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1894411101",
+      "name": "Breathe (2am) [Live]",
+      "url": "https://thegivect.com/#recording-1894411101",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-2"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/1VUxP1t7aujxzLQ3HADkI2",
+        "https://music.apple.com/us/song/1894411101"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1894411102",
+      "name": "Spinner Man (Live)",
+      "url": "https://thegivect.com/#recording-1894411102",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-2"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/0LkQ5pzZdyTHc7inXakqBa",
+        "https://music.apple.com/us/song/1894411102"
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://thegivect.com/#recording-1894411103",
+      "name": "Hurricane Larry (Reprise) [Live]",
+      "url": "https://thegivect.com/#recording-1894411103",
+      "byArtist": {
+        "@id": "https://thegivect.com/#the-give"
+      },
+      "inAlbum": {
+        "@id": "https://thegivect.com/#album-live-at-acoustic-cafe-vol-2"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/11Ty0qlGvAmVCUFhM5JYJO",
+        "https://music.apple.com/us/song/1894411103"
+      ]
+    }
+  ]
+}

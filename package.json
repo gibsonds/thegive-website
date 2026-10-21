@@ -1,0 +1,12 @@
+{
+  "name": "thegive-website",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build-catalog.mjs",
+    "check": "node scripts/build-catalog.mjs --check",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
